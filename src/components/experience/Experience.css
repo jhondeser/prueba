@@ -1,0 +1,57 @@
+.experience__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__backend,
+.experience__frontend {
+  width: 45%;
+}
+
+.skills__logo_container {
+  display: flex;
+  align-items: center;  
+}
+
+.skills__logo_container h4 {
+  margin-left: 1rem;
+}
+
+.progress {
+  height: 35px;
+  width: 100%;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: var(--color-bg-variant);
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+  animation: charge_bar 6s;
+}
+
+.progress-bar-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #cce7f5;
+}
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience__backend,
+  .experience__frontend {
+    width: 90%;
+  }
+}
