@@ -2,8 +2,22 @@ import React from 'react'
 import './Contacts.css'
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useRef } from 'react';
+import  emailjs from  'emailjs-com'
 
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_v7wr7cv', 'template_v4au0jp', form.current, 'HEK6_nOy_cBHseZRh')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section id="contacts">
       <h5>Get in Touch</h5>
@@ -23,7 +37,7 @@ const Contacts = () => {
             <a href="https://wa.me/34661409658" target="_blank">Send a Message</a>
           </div>
         </div>
-        <form action="">
+        <form ref = {form} onSubmit = {sendEmail} >
           <input type="text" name="name" placeholder="Your Full Name" required/>
           <input type="email" name="email" placeholder="Your Email" required/>
           <textarea name="message" id="" cols="30" rows="7" placeholder="Your message"></textarea>
