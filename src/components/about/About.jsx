@@ -36,7 +36,21 @@ const About = () => {
               <small>+50 Completed</small>
             </div>
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, at dolores. Velit, facilis iure, laborum nemo odit quibusdam quae quisquam fuga harum illum expedita corrupti ratione vero eligendi maxime reprehenderit?</p>
+          <p>
+            I'm a digital nomad searching for adventure, travel, and knowledge.
+            I am passionate about new technologies such as 
+            artificial intelligence, the Internet of Things (IoT), big data,
+            Blockchain, 3D printing, drones, gene editing, and 5G. 
+            That's why I have developed a professional career in this area of work. 
+
+            I have more than 4 years of experience in the areas of developing
+            web and pedagogy in the digital world, which has allowed me to hone my skills,
+            with a strong knowledge of the frontend branch, and on track to be a full-stack developer.
+
+            My dream is to travel around the world creating different platforms 
+            that contribute to the solution and automation of processes in different places and cultures. 
+            Contributing to the development of education from the branch of technology
+          </p>
 
           <a href="#contacts" className="btn btn-primary">Let's Talk</a>
         </div>
