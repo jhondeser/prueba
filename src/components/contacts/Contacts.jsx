@@ -3,7 +3,7 @@ import './Contacts.css'
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { useRef } from 'react';
-import  emailjs from  'emailjs-com'
+import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
   const form = useRef();
