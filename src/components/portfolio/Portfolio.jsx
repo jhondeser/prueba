@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
@@ -6,6 +6,8 @@ import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
+
+
 
 const data_portfolio = [
   {
@@ -53,6 +55,37 @@ const data_portfolio = [
 ]
 
 const Portfolio = () => {
+  useEffect(() => {
+    let portfolio__item = document.querySelectorAll('.portfolio__item');
+
+    portfolio__item.forEach(element => {
+
+      element.onmouseover = () => {
+        let element_id = parseInt(element.id[element.id.length-1])
+        if ( element_id === 1 || element_id === 2 || element_id === 3) {
+          
+          setTimeout(() => {
+            element.classList.add('animate__animated','animate__zoomInDown');
+          }, 300);
+
+          setTimeout(() => {
+            element.classList.remove('animate__animated','animate__zoomInDown');
+          }, 8000);
+
+        } else {
+
+          setTimeout(() => {
+            element.classList.add('animate__animated','animate__zoomInUp');
+          }, 300);
+
+          setTimeout(() => {
+            element.classList.remove('animate__animated','animate__zoomInUp');
+          }, 8000);
+        }
+      }
+    });
+  })
+
   return (
     <section id="portfolio">
       <h5>My Recent work</h5>
@@ -61,7 +94,7 @@ const Portfolio = () => {
         {
           data_portfolio.map(data => {
             return (
-              <div className="portfolio__item">
+              <div id={'item_id' + data.id} className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={data.image} alt="" />
                 </div>
@@ -78,5 +111,7 @@ const Portfolio = () => {
     </section>
   )
 }
+
+
 
 export default Portfolio
