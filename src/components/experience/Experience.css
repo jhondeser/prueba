@@ -42,6 +42,42 @@
   color: #cce7f5;
 }
 
+.animate_100 {
+  animation: progres_bar_100 3s;
+}
+
+.animate_90 {
+  animation: progres_bar_90 3s;
+}
+
+.animate_70 {
+  animation: progres_bar_70 3s;
+}
+
+.animate_50 {
+  animation: progres_bar_50 3s;
+}
+
+@keyframes progres_bar_100 {
+  0% {width:0;}
+  100% {width:100%;}
+}
+
+@keyframes progres_bar_90 {
+  0% {width:0;}
+  100% {width:90%;}
+}
+
+@keyframes progres_bar_70 {
+  0% {width:0;}
+  100% {width:70%;}
+}
+
+@keyframes progres_bar_50 {
+  0% {width:0;}
+  100% {width:50%;}
+}
+
 @media screen and (max-width: 600px) {
   .experience__container {
     display: flex;
