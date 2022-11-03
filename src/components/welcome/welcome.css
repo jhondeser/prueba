@@ -1,4 +1,17 @@
 #particles-js {
   width: 100%;
   height: 100vh;
+  z-index: -1;
+}
+
+.particles__btn_cont {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -100px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
 }

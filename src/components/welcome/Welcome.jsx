@@ -120,9 +120,10 @@ const Welcome = () => {
 
   return (
     <section id="welcome">
-      <div id="particles-js">
-
+      <div className="particles__btn_cont">
+          <a href="#header" class="btn btn-primary"> Explore </a>
       </div>
+      <div id="particles-js"></div>
     </section>
   )
 }
