@@ -15,9 +15,8 @@ const Welcome = () => {
 
     window.addEventListener('scroll',function() {
       let posicion_header = header_section.getBoundingClientRect().top;
-      console.log(posicion_header);
       let screen_height = window.innerHeight/3.5;
-      console.log(screen_height);
+      
 
       if (posicion_header < screen_height) {
         particles.style.position = 'fixed';

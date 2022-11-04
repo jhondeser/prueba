@@ -21,7 +21,7 @@ header {
 /*----------- SOCIALS -----------*/
 
 .container__me_social {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: flex-end;
 }
