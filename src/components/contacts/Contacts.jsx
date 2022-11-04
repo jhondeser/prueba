@@ -20,20 +20,20 @@ const Contacts = () => {
   };
   return (
     <section id="contacts">
-      <h5>Get in Touch</h5>
+      <h4>Get in Touch</h4>
       <h2>Contact Me</h2>
       <div className="container container__contact">
         <div className="contact__options">
           <div className="contact__option">
             <MdEmail className="contact__option-icon"/>
             <h4>Email</h4>
-            <h5>Jhonatan.mog2829@gmail.com</h5>
+            <h4>Jhonatan.mog2829@gmail.com</h4>
             <a href="mailto:jhonatan.mog2829@gmail.com" target="_blank">Send a Message</a>
           </div>
           <div className="contact__option">
             <IoLogoWhatsapp className="contact__option-icon"/>
             <h4>WhatsApp</h4>
-            <h5>+34 661409658</h5>
+            <h4>+34 661409658</h4>
             <a href="https://wa.me/34661409658" target="_blank">Send a Message</a>
           </div>
         </div>

@@ -61,34 +61,18 @@ const Portfolio = () => {
     portfolio__item.forEach(element => {
 
       element.onmouseover = () => {
-        let element_id = parseInt(element.id[element.id.length-1])
-        if ( element_id === 1 || element_id === 2 || element_id === 3) {
-          
-          setTimeout(() => {
-            element.classList.add('animate__animated','animate__zoomInDown');
-          }, 300);
+        element.classList.add('animate__animated','animate__pulse');
+      }
 
-          setTimeout(() => {
-            element.classList.remove('animate__animated','animate__zoomInDown');
-          }, 8000);
-
-        } else {
-
-          setTimeout(() => {
-            element.classList.add('animate__animated','animate__zoomInUp');
-          }, 300);
-
-          setTimeout(() => {
-            element.classList.remove('animate__animated','animate__zoomInUp');
-          }, 8000);
-        }
+      element.onmouseout = () => {
+        element.classList.remove('animate__animated','animate__pulse');
       }
     });
   })
 
   return (
     <section id="portfolio">
-      <h5>My Recent work</h5>
+      <h4>My Recent work</h4>
       <h2>portfolio</h2>
       <div className="container portfolio__container">
         {

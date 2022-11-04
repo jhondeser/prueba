@@ -21,16 +21,23 @@ const Welcome = () => {
       if (posicion_header < screen_height) {
         particles.style.position = 'fixed';
         explore_btn.style.display = 'none';
+        
+        update(particles);
       }
     })
 
-    function update() {
-      setInterval(() => {
-        if (particles.style.position === 'fixed') {
-          document.body.scrollIntoView();
-        }
-      }, 1000);
+    function update(element) {
+      console.log('hola',element);
+      if (element.data('done')) {
+        return;
+      }
+
+      document.body.scrollIntoView();
+
+      element.data('done', true);
     }
+
+    
   })
 
   return (

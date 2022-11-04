@@ -9,13 +9,13 @@
   padding: 1rem;
   border-radius: 2rem;
   border: 2px solid transparent;
-  /* transition: var(--transition); */
+  transition: var(--transition);
 }
 
-/* .portfolio__item:hover {
+.portfolio__item:hover {
   border-color: var(--color-white);
   background: transparent;
-} */
+}
 
 .portfolio__item-image {
   border-radius: 1.5rem;

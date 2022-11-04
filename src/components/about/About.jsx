@@ -7,7 +7,7 @@ import { FaFolder } from "react-icons/fa";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
+      <h4>Get To Know</h4>
       <h2>About me</h2>
       <div className="container about-container">
         <div className="about__me">
@@ -20,19 +20,19 @@ const About = () => {
           <div className="about__cards">
             <div className="about__card">
               <FaAward className="about__icon"/>
-              <h5>Experience</h5>
+              <h4>Experience</h4>
               <small>+ 4 Years Working</small>
             </div>
 
             <div className="about__card">
               <FaUserFriends className="about__icon"/>
-              <h5>Clients</h5>
+              <h4>Clients</h4>
               <small>200 + Worlwide</small>
             </div>
 
             <div className="about__card">
               <FaFolder className="about__icon"/>
-              <h5>Projects</h5>
+              <h4>Projects</h4>
               <small>+50 Completed</small>
             </div>
           </div>
