@@ -6,7 +6,8 @@
 }
 
 .contact__option {
-  background-color: var(--color-bg-variant);
+  background-color: var(--color-white);
+  color: var(--color-bg);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -16,6 +17,7 @@
 }
 
 .contact__option:hover {
+  color: var(--color-white);
   background: transparent;
   border-color: var(--color-white);
 }

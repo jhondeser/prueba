@@ -2,10 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .chart_container {
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
   width: 60%;
-  margin-left: 16%;
+  background-color: var(--color-white);
+  padding: 25px;
+  border-radius: 25px;
+}
+
+/*--------------- MEDIA QUERIES (MEDIUM DEVICES) -----------*/
+
+@media screen and (max-width: 1024px) {
+  .chart_container {
+    height: 100%;
+  }
 }

@@ -33,6 +33,7 @@ const Soft_skills = () => {
   })
   return (
     <section id = 'soft-skills'>
+      <h2>My soft skills</h2>
       <div className="continer">
         <div className="chart_container">
           <canvas id="skillsChart"></canvas>
