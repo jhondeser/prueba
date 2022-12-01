@@ -1,7 +1,6 @@
 import React, { useEffect }  from 'react'
 import './Experience.css'
 import { FaCheckCircle } from "react-icons/fa";
-import portfolio1 from "../../assets/portfolio1.jpg"
 
 const Experience = () => {
   useEffect(() => {

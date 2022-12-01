@@ -28,13 +28,13 @@ const Contacts = () => {
             <MdEmail className="contact__option-icon"/>
             <h4>Email</h4>
             <h4>Jhonatan.mog2829@gmail.com</h4>
-            <a href="mailto:jhonatan.mog2829@gmail.com" target="_blank">Send a Message</a>
+            <a href="mailto:jhonatan.mog2829@gmail.com" target="_blank" rel="noopener noreferrer">Send a Message</a>
           </div>
           <div className="contact__option">
             <IoLogoWhatsapp className="contact__option-icon"/>
             <h4>WhatsApp</h4>
             <h4>+34 661409658</h4>
-            <a href="https://wa.me/34661409658" target="_blank">Send a Message</a>
+            <a href="https://wa.me/34661409658" target="_blank" rel="noopener noreferrer">Send a Message</a>
           </div>
         </div>
         <form ref = {form} onSubmit = {sendEmail} >

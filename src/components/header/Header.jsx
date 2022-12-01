@@ -7,13 +7,11 @@ import HeaderSocials from './HeaderSocials'
 const Header = () => {
   useEffect(() => {
     let container_header = document.getElementById('header');
-    let container_social = document.getElementById('me__social')
+    let container_social = document.getElementById('me__social');
 
     window.addEventListener('scroll',function() {
       let posicion_header = container_header.getBoundingClientRect().top;
-      console.log(posicion_header);
       let screen_height = window.innerHeight/3.5;
-      console.log(screen_height);
 
       if (posicion_header < screen_height) {
         container_social.classList.add('animate__animated','animate__fadeInDown','animate__slow')

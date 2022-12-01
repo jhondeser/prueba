@@ -1,0 +1,11 @@
+.continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart_container {
+  height: 100vh;
+  width: 60%;
+  margin-left: 16%;
+}
