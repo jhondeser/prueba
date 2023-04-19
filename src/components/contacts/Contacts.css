@@ -6,8 +6,8 @@
 }
 
 .contact__option {
-  background-color: var(--color-white);
-  color: var(--color-bg);
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;

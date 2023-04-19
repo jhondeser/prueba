@@ -11,9 +11,9 @@ const Welcome = () => {
     let portfolio_section = document.getElementById('portfolio')
     let testimonials_section = document.getElementById('testimonials')
     let contacts_section = document.getElementById('contacts')
-    let softskills_section = document.getElementById('soft-skills')
+    // let softskills_section = document.getElementById('soft-skills')
     
-    let secctions_arry = [header_section, about_section, experience_section, portfolio_section, testimonials_section, contacts_section, softskills_section]
+    let secctions_arry = [header_section, about_section, experience_section, portfolio_section, testimonials_section, contacts_section]
     
     secctions_arry.forEach(data => {
       data.style.display = 'none'

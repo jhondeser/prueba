@@ -41,8 +41,8 @@
 }
 
 .about__card {
-  color: var(--color-bg);
-  background-color: var(--color-white);
+  color: var(--color-white);
+  background-color: var(--color-bg-variant);
   border: 3px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
