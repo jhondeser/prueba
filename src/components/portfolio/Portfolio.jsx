@@ -15,7 +15,7 @@ const data_portfolio = [
     image: IMG1,
     title: 'Movie Application',
     github: 'https://github.com/',
-    demo: '#',
+    demo: 'http://movieapp.jhondeser.com',
   },
   {
     id: 2,
