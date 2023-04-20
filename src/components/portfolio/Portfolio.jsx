@@ -14,7 +14,7 @@ const data_portfolio = [
     id: 1,
     image: IMG1,
     title: 'Movie Application',
-    github: 'https://github.com/',
+    github: 'https://github.com/jhondeser/netflix_react_proyect',
     demo: 'http://movieapp.jhondeser.com',
   },
   {
@@ -42,8 +42,8 @@ const data_portfolio = [
     id: 5,
     image: IMG5,
     title: 'Ecommerce',
-    github: 'https://github.com/',
-    demo: '',
+    github: 'https://github.com/jhondeser/ecoomerce',
+    demo: 'https://ecoomerce.jhondeser.com',
   },
   {
     id: 6,
